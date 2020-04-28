@@ -16,9 +16,9 @@ app.use(function(req, res, next) {
   next();
 });
  
-app.get('/*', function(req,res) {
-    res.sendFile(path.join(__dirname+'/dist/index.html'));
-    });
+// app.get('/*', function(req,res) {
+//     res.sendFile(path.join(__dirname+'/dist/index.html'));
+//     });
 
 app.use(express.static('www'));
 app.set('port', process.env.PORT || 5000);
